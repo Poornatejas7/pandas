@@ -77,14 +77,14 @@ print(csv_1)
 
 csv_1 = pd.read_csv('Trail.csv')
 
-print(csv_1.describe())  (gives max,std,min....values)
-print(csv_1.index) (gives insex value from starting,end and stepwise)
-print(csv_1.columns) (gives the names of the columns which are present)
-print(csv_1.head()) (gives the top 5 values in a table , we can also pass parameter to head(2) gives only starting 2 rows)
-print(csv_1.tail()) (same has head( but it gives last 5 ending values ))
-print(csv_1[10:17]) (its slicing )
-print(csv_1.index.array) (converting index value to array)print(csv_1.to_dict) (converts the values to dictionary)
-print(csv_1.to_numpy) (converts the dataframe to numpy)
+print(csv_1.describe()) # (gives max,std,min....values)
+print(csv_1.index) #(gives insex value from starting,end and stepwise)
+print(csv_1.columns) #(gives the names of the columns which are present)
+print(csv_1.head())# (gives the top 5 values in a table , we can also pass parameter to head(2) gives only starting 2 rows)
+print(csv_1.tail()) #(same has head( but it gives last 5 ending values ))
+print(csv_1[10:17])# (its slicing )
+print(csv_1.index.array) #(converting index value to array)print(csv_1.to_dict) (converts the values to dictionary)
+print(csv_1.to_numpy) #(converts the dataframe to numpy)
 sort = csv_1.sort_index(axis=1,ascending=False) 
 #(axis=0 is sort by columns and axis=1 is sort by rows)#print(sort) #sorts the index value in descending order
 s= csv_1.sort_values(by=['marks']) # sorting the value
